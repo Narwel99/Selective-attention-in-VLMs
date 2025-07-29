@@ -1,9 +1,9 @@
 # Selective-attention-in-VLMs
-Analysis of behavioral selective attention in LLAVA-NEXT-VIDEO-8b.
+Analysis of behavioral selective attention in LLAVA-NEXT-VIDEO-8b.  
 Does filtering out bakcground noise to focus on relevant object in a scene enhance VLMs performance in understanding Temporality and objects-actions causality?
 
-This project has two step.
-First : Segmentation process
+This project has two step.  
+First : Segmentation process  
 Second : Models inference
 
 ## INSTALLATION AND RUNNING INSTRUCTIONS:
@@ -17,7 +17,7 @@ Second : Models inference
    ```
   conda activate Segm 
   ```
-  -Download all necessary libraries, you can use the requirements.text files
+  -Download all necessary libraries, you can use the requirements.text files  
   There is two of them, for Segmentation use requirementsS.txt
    ```
   pip install -r /path/to/requirementsS.txt
@@ -45,8 +45,8 @@ Second : Models inference
 
 ## CODES EXPLANATION
 ### Segmentation process
-This codes allows to visualize videos from the SSV2 dataset.
-It provide a custom interface tho guide the segmentation processus
+This codes allows to visualize videos from the SSV2 dataset.  
+It provide a custom interface tho guide the segmentation processus  
 The interface allow the user to:
 - visualize video frames of the current video by skipping each 10th frames or selecting a specific frame.
 - add or remove points in the current frames (points will create a bounding box to the object, that will be display right after the selection)
@@ -64,15 +64,15 @@ Everytimes a segmentation is performed the code saves:
 - the tracking results for each objects accross frames
 - the selections made (coordinate points to select an object for segmentation)
 
-In the outputs directory, for a matter of size you can only see a few examples of the reconstructed videos for both cases.
+In the outputs directory, for a matter of size you can only see a few examples of the reconstructed videos for both cases.  
 And the masks file for the 100 videos I have segmented. (zip file), which is needed to run the next step
 
 ### Model inference
-This codes runs the model in two modes.
-The original mode is the LLaVa-Next-Video-b model as is.
-The crop-and-mask model uses the msegmentation masks and applies it to the frame of the video, crop and mask the frame based on the region given by the mask to create 'a focus' on the frame, zeroing out everything outside the region (the aim is to avoid background bias).
+This codes runs the model in two modes.  
+The original mode is the LLaVa-Next-Video-b model as is.  
+The crop-and-mask model uses the msegmentation masks and applies it to the frame of the video, crop and mask the frame based on the region given by the mask to create 'a focus' on the frame, zeroing out everything outside the region (the aim is to avoid background bias).  
 
-The custom interface allows to choose two options:
+The custom interface allows to choose two options:  
 option 1 (single video analysis) analyse and provide results for only one video :
 - write the name of the video for analysis
 - write the prompts
@@ -86,11 +86,11 @@ option 1 (single video analysis) analyse and provide results for only one video 
   - Semantic similarity for each open-ended questions
   - Total scores of metrics for the mode
 
-option 2 (all videos analysis) analyse and provide results for all the videos
-This mode look at the prompts.json file and run the two modes for all the videos.
-If the human notation is enables, during process the code will provides the results of each question as option 1 and ask for the notation of each questions.
-This is time consuming depending on the amount of video and prompt (here 297 answers) so i disable it.
-At the end this option return the result in two CSV files.
+option 2 (all videos analysis) analyse and provide results for all the videos  
+This mode look at the prompts.json file and run the two modes for all the videos.  
+If the human notation is enables, during process the code will provides the results of each question as option 1 and ask for the notation of each questions.  
+This is time consuming depending on the amount of video and prompt (here 297 answers) so i disable it.  
+At the end this option return the result in two CSV files.  
 Description_table : 
   - Name of the video
   - Current Mode
