@@ -18,7 +18,8 @@ Outputs:
 Codes:
   - ManualSegmentation code
   - Model_2modes
-  - Requirement.txt x2
+  - Requirement.txt for each code
+  - ReadME.
 
 This project has two step.  
 First : Segmentation process  
