@@ -109,7 +109,7 @@ option 1 (single video analysis) analyse and provide results for only one video 
 option 2 (all videos analysis) analyse and provide results for all the videos  
 This mode look at the prompts.json file and run the two modes for all the videos.  
 If the human notation is enables, during process the code will provides the results of each question as option 1 and ask for the notation of each questions.  
-This is time consuming depending on the amount of video and prompt (here 297 answers) so i disable it.  
+This is time consuming depending on the amount of video and prompt (here 296 answers) so i disable it.  
 At the end this option return the result in two CSV files.  
   Description_table : 
   - Name of the video
