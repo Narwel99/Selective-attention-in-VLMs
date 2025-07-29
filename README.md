@@ -2,6 +2,24 @@
 Analysis of behavioral selective attention in LLAVA-NEXT-VIDEO-8b.  
 Does filtering out bakcground noise to focus on relevant object in a scene enhance VLMs performance in understanding Temporality and objects-actions causality?
 
+## Project content
+This Project contains:  
+Dataset:
+  - SSV2 dataset zip files for Segmentation
+  - VideoTest (the original video of the 100 videos I've segmented, used for Model inference)
+  - Ground_truth.json and prompt.json files (I have hand-crafted 5 prompts and 5 answers as ground truth for 30 videos, these files are used for Model inference)
+  - labels.json (file that containt the labels from SSV2 only for the 100 segmented videos, used for testing)
+Outputs:
+  - masks zip files (used for model inference Crop-and-mask mode)
+  - Video (this fodler show some examples of segmented videos, it show the recosntructed video with the bounding box, Ids, and mask (color change on masked region)
+  - attention maps (this folder show some examples on how the model 'sees' in different modes)
+  - Tables (my results of model inference)
+
+Codes:
+  - ManualSegmentation code
+  - Model_2modes
+  - Requirement.txt x2
+
 This project has two step.  
 First : Segmentation process  
 Second : Models inference
@@ -91,22 +109,21 @@ This mode look at the prompts.json file and run the two modes for all the videos
 If the human notation is enables, during process the code will provides the results of each question as option 1 and ask for the notation of each questions.  
 This is time consuming depending on the amount of video and prompt (here 297 answers) so i disable it.  
 At the end this option return the result in two CSV files.  
-Description_table : 
-  - Name of the video
-  - Current Mode
-  - Questions
-  - Questions category
-  - Accuracy 
-  - F1 score 
-  - RougeL score
-  - Semantic similarity
-  - Model Answers
-  - Ground truth
-  - Human notation
+  Description_table : 
+    - Name of the video
+    - Current Mode
+    - Questions
+    - Questions category
+    - Accuracy 
+    - F1 score 
+    - RougeL score
+    - Semantic similarity
+    - Model Answers
+    - Ground truth
+    - Human notation
+  
+  Summary_table :
+  For each mode the total score (mean of metrics)
 
-Summary_table :
-For each mode the total score (mean of metrics)
 
-
-  -run the cells
 
