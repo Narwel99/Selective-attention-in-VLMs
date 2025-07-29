@@ -1,0 +1,94 @@
+{
+    "172868": {
+        "prompt": "Answer the following questions about the video: 1.What does the hand do with the laptop? 2.Was the laptop open or closed at first? 3.When did the laptop start opening? 4.Why does the hand lift the lid of the laptop? 5.Describe the sequence of actions."
+        },
+    "61179": {
+            "prompt": "Answer the following questions about the video: 1.What do the hands do with the objects? 2.Were the objects close or far from each other at first? 3.Where is the small cork? On the left or right side of the screen? 4.Why are the small and big cork away from each other at the end? 5.Describe the sequence of actions."
+        },
+    "65083": {
+            "prompt": "Answer the following questions about the video: 1.What object does the hand interact with? 2.What does the hand do with the toothpaste? 3.Where is the toothpaste at first?  On the left or right side of the screen. 4.What caused the toothpaste to move? 5.Describe the sequence of actions."
+        },
+    "140591": {
+            "prompt": "Answer the following questions about the video: 1.What does the hand hold? 2.Was the coffee mug laid on its side or upright? 3.Where is the coffee mug at the end? On or off the table? 4.What caused the coffee mug to be on the table? 5.Describe the sequence of actions."
+        },
+    "195861": {
+            "prompt": "Answer the following questions about the video: 1.Is there a white rook on the board at the start of the video? (yes/no) 2.Which new chess piece the hand add? A black queen, a black king, a white queen or a white king? 3.Between which other chess pieces is the new chess piece placed ? 4.Why did the number of chess pieces change? 5.Describe the sequence of actions."
+        },
+    "63480": {
+            "prompt": "Answer the following questions about the video: 1.What does the hand pull? 2.Where is the remote control at first ? On the left or right side of the screen? 3.In which direction is the remote being moved? 4.Why the remote control change position ? 5.Describe the sequence of actions."
+        },
+    "129830": {
+            "prompt": "Answer the following questions about the video: 1.After the hand removes an object, what item is revealed under it? 2.Where was the spoon before the paper was removed? On top of it or under it ? 3.When did the spoon become visible? 4.Why did the spoon become visible? 5.Describe the sequence of actions."
+        },
+    "90010": {
+            "prompt": "Answer the following questions about the video: 1.What object does the hand holds? 2.Was the toy closer or away from the camera at first? 3.Where is the toy after? Away or close to the camera? 4.What caused the toy to be closer? 5.Describe the sequence of actions."
+        },
+    "777": {
+            "prompt": "Answer the following questions about the video: 1.What does the hand spin? 2.Was the tennis ball in the hand or spinning at first? 3.Does the tennis ball continue spinning at the end? 4.What caused the tennis ball to spin? 5.Describe the sequence of actions."
+        },
+    "48963": {
+            "prompt": "Answer the following questions about the video: 1.What does the hand lift? 2.Does the hand lift or drop down the packet first? 3.What does the hand do after lifting the packet? 4.What caused the packet to drop down? 5.Describe the sequence of actions."
+        },
+    "82631": {
+            "prompt": "Answer the following questions about the video: 1.On what is the teddy bear? 2.Is the teddy bear upright or on its side at first? 3.Where is the teddy bear after being pushed? 4.What caused the teddy bear to fall over the lid? 5.Describe the sequence of actions."
+    },
+    "32262": {
+            "prompt": "Answer the following questions about the video: 1.Where is the card after the hand throw it? 2.Where is the card at the end of the video? 3.Where is the card at first ? 4.Why does the card end on the floor ? 5.Describe the sequence of actions."
+        },
+    "52357": {
+            "prompt": "Answer the following questions about the video: 1.Is the paper fold or unfold at the end of the video? 2.Is the paper fold or unfold at first ? 3.the hand folds the paper from left to right or right to left ? 4.Why the state of the paper change ? 5.Describe the sequence of actions."
+        },
+    "25486": {
+            "prompt": "Answer the following questions about the video: 1.What object the hand holds? 2.Where is the credit card at first ? 3.Where is the credit card at the end of the video ? 4.What caused the card to be in the bowl ? 5.Describe the sequence of actions."
+        },
+    "54702": {
+            "prompt": "Answer the following questions about the video: 1.Does the hands move the objects simultaneously or one by one  ? 2.Where is the spanner at first ? 3.Does the spanner and the sonypendrive touch each other during movement ? 4.Why does the objects switch sides ? 5.Describe the sequence of actions."
+        },
+    "81621": {
+            "prompt": "Answer the following questions about the video: 1.What does the hand open? 2.Was the container open or closed at the beginning? 3.What happened to the container after the hand interacted with it? 4.Why did the state of the container change? 5.Describe the sequence of actions."
+        },
+    "48970": {
+            "prompt": "Answer the following questions about the video: 1.After the hand removes an object, what item is revealed behind it? 2.Where was the pencil located before the crayon was removed? 3.When did the pencil become visible? 4.Why did the pencil become visible? 5.Describe the sequences of actions in the video."
+        },
+    "150003": {
+            "prompt": "Answer the following questions about the video: 1.How many remotes does the hand pick up? 2.What was the position of the remote from the others before the hand picked it up? On the left, right or between them? 3.How many remotes remain after the hand removes one? 4.Why did the number of remotes change? 5.Describe the sequence of actions."
+        },
+    "994": {
+            "prompt": "Answer the following questions about the video: 1.What object does the hand interact with? 2.Does the hand already hold the spoon at the beginning? 3.Where is the spoon before the hand moves it? On the left or right side of the screen. 4.Why did the spoon move? 5.Describe the sequence of actions."
+        },
+    "3": {
+            "prompt": "Answer the following questions about the video: 1.How many books does the man pick up and move? 2.Did the man pick up the white book or the black book first? 3.Where were the books before the man moved them? On the left or right side of the man? 4.Why does the black book end up on the white book? 5.Describe the sequence of actions."
+        },
+    "20000": {
+            "prompt": "Answer the following questions about the video: 1.What does the hand push? 2.The cup is upright or on its side at the beginning of the video? 3.Is the cup on or off the table before beeing pushed? 4.Why the cup fell? 5.Describe the sequence of actions."
+    },
+    "82632": {
+            "prompt": "Answer the following questions about the video: 1.What does the hand hold? 2.Where is the wrapper paper at the beginning? Up or down the screen? 3.In which direction is the wrapping paper being moved? 4.Why did the wrapping paper change position? 5.Describe the sequence of actions."
+        },
+    "52005": {
+            "prompt": "Answer the following questions about the video: 1.What object is visible before the camera moves? 2.What item is revealed behind the mirror? 3.When did the smartphone become visible? 4.Why did the smartphone become visible? 5.Describe the sequence of actions."
+        },
+    "50001": {
+            "prompt": "Answer the following questions about the video: 1.Does the hands move the objects simultaneously or one by one ? 2.Is the soap box close or away from the cup at the beginning of the video? 3.Is the cup close or away from the soap box at the end of the video? 4.Why the plastic cup and soap box are away from each other ? 5.Describe the sequence of actions."
+        },
+    "129834": {
+            "prompt": "Answer the following questions about the video: 1.What does the hand push? 2.Was the coaster on the right or left side of the table at first? 3.In which direction is the coaster being pushed? 4.What happens to the coaster at the end? 5.Describe the sequence of actions."
+        },
+    "90013": {
+            "prompt": "Answer the following questions about the video: 1.How many object does the hand places on the table? 2.Where is the pillow at first ? Off the table or on the table? 3.Is the pillow on or off the table at the end of the video ? 4.What caused the pillow to be on the table at the end? 5.Describe the sequence of actions."
+        },
+    "5235": {
+            "prompt": "Answer the following questions about the video: 1.How many objects does the hand interact with ? 2.Is the smartphone screen-up or screen-down at first? 3.Is the smartphone screen-up or screen-down after the hand interacts with it? 4.Why does the orientation of the phone change ? 5.Describe the sequence of actions."
+        },
+    "129845": {
+            "prompt": "Answer the following questions about the video: 1.How many objects interact together? 2.What object collides with the other object ? Black toy car or blue toy car ? 3.What action is performed by the black toy car before collision? 4.Why the blue toy car moves at the end? 5.Describe the sequence of actions."
+        },
+    "77705": {
+            "prompt": "Answer the following questions about the video: 1.What does the hands tear? 2.How many piece of leaf are after the hands tears it? 3.Why the state of the leaf changes? 4.Describe the sequence of actions."
+        },
+    "58457": {
+            "prompt": "Answer the following questions about the video: 1.How many object does the hand interact with? 2.Where is the spoon at first ? 3.Why the spoon falls down? 4.Describe the sequence of actions.."
+        }
+
+}
+

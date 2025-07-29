@@ -1,0 +1,211 @@
+{
+    "172868": {
+        "q1": "opens the laptop lid",
+        "q2": "closed",
+        "q3": "the hand lifts the lid",
+        "q4": "The hand lift the laptop lid to open it",
+        "q5": "The hand lifts the lid and open the laptop"
+    },
+    "61179": {
+        "q1": "moves them closer to each other",
+        "q2": "Far from each other",
+        "q3": "on the right side of the screen",
+        "q4": "The hands moves them closer to each other",
+        "q5": "the hands pick up a small cork and larger cork and moves them closer to each other, then put them down."
+    },
+    "65083": {
+        "q1": "a toothpaste.",
+        "q2": "moves the toothpaste to the right",
+        "q3": "on the left side of the screen",
+        "q4": "The hands moves the  toothpaste from the left to the right.",
+        "q5": "The hand approaches the toothpaste then moves it from left to right"
+    },
+    "140591": {
+        "q1": "a coffee mug",
+        "q2": "on its side",
+        "q3": "on the table",
+        "q4": "The hand place the coffee mug on the table",
+        "q5": "the hand hold up the coffee mug, approach it to the table and placed it on its side."
+    },
+    "195861": {
+        "q1": "no",
+        "q2": "A white king",
+        "q3": "Between the black queen and black king",
+        "q4": "because a white king was added to the board.",
+        "q5": "The hand places a chess piece  between two other chess piece."
+    },
+    "63480": {
+        "q1": "a remote control",
+        "q2": "on the right side of the screen",
+        "q3": "from right to left side of the screen",
+        "q4": "because the hand moves the remote control",
+        "q5": "The hand pulls the remote control from the right to the left"
+    },
+    "129830": {
+        "q1": "a spoon ",
+        "q2": "Under the paper",
+        "q3": "When the paper was removed",
+        "q4": "Because the hand removes the paper",
+        "q5": "The hand removes the paper, revealing the spoon under it"
+    },
+    "90010": {
+        "q1": "a small toy",
+        "q2": "away from the camera",
+        "q3": "closer to the camera",
+        "q4": "The hand moves the toy closer to the camera",
+        "q5": "The hand pick up the toy and moves it closer to the camera"
+    },
+    "777": {
+        "q1": "tennis ball",
+        "q2": "in the hand",
+        "q3": "yes",
+        "q4": "the hand spins the ball",
+        "q5": "The hand spins the ball, the tennis ball spins"
+    },
+    "48963": {
+        "q1": "a packet of food",
+        "q2": " lifts the packet first",
+        "q3": "drops the packet down",
+        "q4": "the hand drops the packet",
+        "q5": "the hand lift the packet, then drops it down"
+    },
+    "82631": {
+        "q1": "A lid",
+        "q2": "upright",
+        "q3": "Falls over the lid ",
+        "q4": "The hand pushed the teddy bear of the lid",
+        "q5": "The hand pushes the teddy bear, that falls over the lid"
+    },
+    "32262": {
+        "q1": "Into the air",
+        "q2": "On the floor",
+        "q3": "in the hand ",
+        "q4": "because the hand throw it in the air and then falls down",
+        "q5": "the hand throws the card into the air, then the card falls on the floor"
+    },
+    "52357": {
+        "q1": "folded",
+        "q2": "unfolded",
+        "q3": "from left to right",
+        "q4": "Because the hands folds it ",
+        "q5": "The hand folds the paper from left to right"
+    },
+    "25486": {
+        "q1": "a credit card",
+        "q2": "In the hand ",
+        "q3": "In the bowl",
+        "q4": "The hand dropped the card in the bowl",
+        "q5": "The hand holds the credit card, then dropped it in the bowl"
+    },
+    "54702": {
+        "q1": "simultaneously",
+        "q2": "on the left side of the screen",
+        "q3": "do not touch each other",
+        "q4": "because the hands move them to the opposite direction",
+        "q5": "the hands moves the spanner and the Sony Pendrive simultaneously, the spanner moves to the right and the Sony Pendrive moves to the left. "
+    },
+    "81621": {
+        "q1": "container",
+        "q2": "closed",
+        "q3": "the container opens",
+        "q4": "Because the hands opens it",
+        "q5": "The hand opens the container"
+    },
+    "48970": {
+        "q1": "After the hand removes the crayon, the pencil is revealed behind it",
+        "q2": "The pencil was located behind the crayon before the crayon was removed",
+        "q3": "when the crayon was removed",
+        "q4": "because the crayon was removed",
+        "q5": "the hand removes the crayon, and then the pencil becomes visible"
+    },
+    "150003": {
+        "q1": "one remote",
+        "q2": "between the other remotes",
+        "q3": "two remotes",
+        "q4": "because the hand removed one",
+        "q5": "the hand picks up the remote from between the other remotes."
+    },
+    "994": {
+        "q1": "a spoon",
+        "q2": "yes",
+        "q3": "on the left side of the screen",
+        "q4": "because the hand moves it",
+        "q5": "The hand moves the spoon to the right side of the screen."
+    },
+    "3": {
+        "q1": "two books",
+        "q2": "white book first",
+        "q3": "on the left side of the man",
+        "q4": "because the man moves it to the right side on top of the white book.",
+        "q5": "The man pick up the white book and moves it to the right side , then pick up the black book and moves to the right side on top of the white book"
+    },
+    "20000": {
+        "q1": "a cup",
+        "q2": "upright",
+        "q3": "On the table",
+        "q4": "Because the hand pushed it ",
+        "q5": "The hand pushes a cup, the cup fell off the table"
+    },
+    "82632": {
+        "q1": "wrapping paper",
+        "q2": " top of the screen",
+        "q3": "down the screen",
+        "q4": "because the hand moved it down the screen",
+        "q5": "the hand holds the wrapping paper and moves it down the screen"
+    },
+    "52005": {
+        "q1": "a mirror",
+        "q2": "A smartphone",
+        "q3": "When the camera pans to the right",
+        "q4": "Because the camera pans to the right ",
+        "q5": "The camera pans to the right, revealing the smartphone behind the mirror"
+    },
+    "50001": {
+        "q1": "simultaneously",
+        "q2": "close",
+        "q3": "away",
+        "q4": "Because the hands moves them away from each other",
+        "q5": "The hands moves the cup and the soap box away from each other. The cup moves to the left. The soap box moves to the right."
+    },
+    "129834": {
+        "q1": "The hand pushes a coaster down a table.",
+        "q2": "on the left side of the table",
+        "q3": "towards the right",
+        "q4": "falls off the table",
+        "q5": "the hand push the coaster to the right on the table moving, then the coaster falls off the table"
+    },
+    "90013": {
+        "q1": "One object",
+        "q2": "Off the table",
+        "q3": "On the table",
+        "q4": "the hand places the pillow  on the table",
+        "q5": "The hand place the pillow on the table"
+    },
+    "5235": {
+        "q1": "A single object ",
+        "q2": "screen-up ",
+        "q3": "screen-down",
+        "q4": "Because the hand turn it from screen-up to screen-dow",
+        "q5": "The hands picks up the smartphone, turns it screen-down, then puts it back down"
+    },
+    "129845": {
+        "q1": "two objects",
+        "q2": "The black toy car collides with the blue toy car",
+        "q3": "moves towards the blue toy car",
+        "q4": "Because the black toy car pushed it ",
+        "q5": "the black toy car moves towards the blue toy car, collides with it, and then the blue toy car moves away from the collision."
+    },
+    "77705": {
+        "q1": "A leaf",
+        "q2": "Two pieces",
+        "q3": "The leaf is cut in two",
+        "q4": "Because the hand tears it into pieces",
+        "q5": "The hands tear the leaf, the leaf is cut in half"
+    },
+    "58457": {
+        "q1": "Single object",
+        "q2": "In the hand",
+        "q3": "Because the hand lets go of it",
+        "q4": "the hand holds the spoon then reaease it, the spoon drop down"
+    }
+}
