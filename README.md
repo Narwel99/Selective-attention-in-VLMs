@@ -112,17 +112,17 @@ If the human notation is enables, during process the code will provides the resu
 This is time consuming depending on the amount of video and prompt (here 297 answers) so i disable it.  
 At the end this option return the result in two CSV files.  
   Description_table : 
-    - Name of the video
-    - Current Mode
-    - Questions
-    - Questions category
-    - Accuracy 
-    - F1 score 
-    - RougeL score
-    - Semantic similarity
-    - Model Answers
-    - Ground truth
-    - Human notation
+  - Name of the video
+  - Current Mode
+  - Questions
+  - Questions category
+  - Accuracy 
+  - F1 score 
+  - RougeL score
+  - Semantic similarity
+  - Model Answers
+  - Ground truth
+  - Human notation
   
   Summary_table :
   For each mode the total score (mean of metrics)
