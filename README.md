@@ -36,14 +36,14 @@ Second : Models inference
    ```
   conda activate Segm 
   ```
-  -Download all necessary libraries, you can use the requirements.text files  
+  - Download all necessary libraries, you can use the requirements.text files  
   There is two of them, for Segmentation use requirementsS.txt
    ```
   pip install -r /path/to/requirementsS.txt
   ```
-  -open ManualSegmentation notebook
-  -Select Appropriate Kernel (here Segm)
-  -run the cells
+  - open ManualSegmentation notebook
+  - Select Appropriate Kernel (here Segm)
+  - run the cells
 
   ### Model inference
   - create another environment with specific python version for the Model
