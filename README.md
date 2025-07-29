@@ -66,7 +66,7 @@ Second : Models inference
 ## CODES EXPLANATION
 ### Segmentation process
 This codes allows to visualize videos from the SSV2 dataset.  
-It provide a custom interface tho guide the segmentation processus  
+It provide a custom interface te guide the segmentation processus  
 The interface allow the user to:
 - visualize video frames of the current video by skipping each 10th frames or selecting a specific frame.
 - add or remove points in the current frames (points will create a bounding box to the object, that will be display right after the selection)
@@ -79,7 +79,7 @@ Everytimes a segmentation is performed the code saves:
 - the frames with the bouding boxes (for visualization)
 - the frames with the masks (for visualization)
 - the segmentation masks (.npy files used for Model inference process)
-- the reconstructied video with the bouding boxes , IDs and masks
+- the reconstructed video with the bouding boxes , IDs and masks
 - the reconstructied video with masks only (different colors on objects for visualization)
 - the tracking results for each objects accross frames
 - the selections made (coordinate points to select an object for segmentation)
