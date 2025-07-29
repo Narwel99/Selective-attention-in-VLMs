@@ -59,8 +59,9 @@ Second : Models inference
    ```
   pip install -r /path/to/requirementsM.txt
   ```
-  -open Model_2modes notebook
-  -Select Appropriate Kernel (here Model)
+  - open Model_2modes notebook
+  - Select Appropriate Kernel (here Model)
+  - run the cells
 
 ## CODES EXPLANATION
 ### Segmentation process
