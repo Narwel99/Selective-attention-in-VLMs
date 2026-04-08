@@ -38,7 +38,7 @@ Models were evaluated across different cognitive levels: Object-Action Recogniti
 ### 2. Interpretability: Inside the Vision Tower
 To understand *why* these performance shifts occurred, I analyzed the internal attention of each model for specific failure and success cases. The methodology involved:
 1. Identifying which frame received the most attention.
-2. Analyzing the layer-wise attention over the frameq.
+2. Analyzing the layer-wise attention over the frames.
 3. Extracting the spatial overlays on the actual frames in attended the most to visualize exactly *where* the model was looking.
 
 <img width="1436" height="481" alt="image" src="https://github.com/user-attachments/assets/7cc4f075-36c7-4958-af3b-b517f0b1255d" />
@@ -98,7 +98,7 @@ This notebook provides a custom interface to guide the segmentation process:
   
 Every time a segmentation is performed the code saves:
 - the frames (for visualization)
-- the frames with the bouding boxes (for visualization)
+- the frames with the bounding boxes (for visualization)
 - the frames with the masks (for visualization)
 - the segmentation masks (.npy files used for Model inference process)
 - the reconstructed video with the bounding boxes , IDs and masks
