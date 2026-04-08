@@ -1,5 +1,5 @@
 # Selective-attention-in-VLMs
-***Bridging Biological Cognition and Multimodal AI***
+***Bridging Biological Cognition and Multimodal AI***\\
 This repository contains the framework and experimental pipeline developed for my Master's Thesis: **"Analysis of temporal and causal understanding in VLMs in comparison with the biological brain."**
 
 ##Researche Objective
