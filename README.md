@@ -9,7 +9,7 @@ By filtering out background context to focus on relevant objects, this project e
 
 ## Project content
 ### Dataset & Ground Truth
-  - **SSV2 dataset: ** zip files for Segmentation
+  - **SSV2 dataset:** zip files for Segmentation
   - **VideoTest** (the original video of the 100 videos I've segmented, used for Model inference)
   - **Hand-Crafted Benchmark:** <ins>Ground_truth.json</ins> and <ins>prompt.json files</ins> ontaining ... QA pairs specifically designed to test temporal sequencing and causal inference.
   - **Labels:** <ins>labels.json</ins> Synced with SSV2 ground truth for rigorous evaluation.
