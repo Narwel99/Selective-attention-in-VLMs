@@ -77,3 +77,23 @@ The models are evaluated under two conditions:
 - **Single Video Analysis:** Deep dive into a specific clip with real-time scoring.
 - **Batch Analysis:** Automated run over the entire dataset, generating Description_table.csv and Summary_table.csv.
 
+## Final Analysis
+***Does behavioural selective attention improve VLMs performance to infer temporal and causal relationships between objects and their interactions ?***
+- **H1:** Implementing behavioural selective attention improves VLM’s performance in temporal and causal reasoning.
+- **H0:** Behavioural selective attention has no significant effect on VLM’s performance in temporal and causal reasoning
+
+**Hypothesis H0 Validated:** Enforcing attention to relevant objects is not a universal solution.  
+The success of cognitive-inspired pipelines depends on whether the VLM uses local object-centric processing (where focus helps) or global scene aggregation (where focus disrupts).
+
+| Model | Architecture | Selective Attention Effect | Technical Conclusion |
+| :--- | :--- | :---: | :--- |
+| **LLaVA-NeXT (7B)** | Object-Centric (ViT) | **Positive** ✅ | **Success:** Removing noise forces the CLIP encoder to focus on local action dynamics, improving temporal tracking. |
+| **VideoLLaMA2 (7B)** | Hierarchical (S-T) | **Neutral** ➖ | **Stable:** Its robust local-global integration makes it largely insensitive to background filtering. |
+| **mPLUG-Owl3 (7B)** | Scene-Centric (Anchors) | **Negative** ❌ | **Unstable:** Relies on "global anchors." Masking disrupts visual-linguistic fusion, leading to hallucinations. |
+
+* **🎯 LLaVA-NeXT (The Precision Specialist):** Diffuse attention in baseline; exceptionally sharp focus in Crop-and-Mask. Removing irrelevant tokens ensures intermediate actions are properly attended to.
+* **🌊 mPLUG-Owl3 (The Global Summarizer):** Optimized for scene-level "visual anchors." Removing the background context breaks its semantic reasoning, forcing the model to rely on linguistic priors (hallucinations).
+* **⚖️ VideoLLaMA2 (The Balanced Observer):** Stable recognition across temporal spans. Its hierarchical spatial-temporal design provides a "safety net" against background noise.
+
+
+
