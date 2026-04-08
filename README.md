@@ -1,20 +1,23 @@
 # Selective-attention-in-VLMs
-_Bridging Biological Cognition and Multimodal AI
-Analysis of behavioral selective attention in LLAVA-NEXT-VIDEO-8b.  
-Does filtering out bakcground noise to focus on relevant object in a scene enhance VLMs performance in understanding Temporality and objects-actions causality?
+***Bridging Biological Cognition and Multimodal AI***
+This repository contains the framework and experimental pipeline developed for my Master's Thesis: **"Analysis of temporal and causal understanding in VLMs in comparison with the biological brain."**
+
+##Researche Objective
+Does simulating biological behavioral selective attention enhance the performance of Vision-Language Models (VLMs) in understanding Temporality and Object-Action Causality?
+By filtering out background context to focus on relevant objects, this project evaluates whether current architectures can achieve better cognitive alignment with human-like reasoning.
 
 ## Project content
-This Project contains:  
-Dataset:
-  - SSV2 dataset zip files for Segmentation
-  - VideoTest (the original video of the 100 videos I've segmented, used for Model inference)
-  - Ground_truth.json and prompt.json files (I have hand-crafted 5 prompts and 5 answers as ground truth for 30 videos, these files are used for Model inference)
-  - labels.json (file that containt the labels from SSV2 only for the 100 segmented videos, used for testing)
-Outputs:
-  - masks zip files (used for model inference Crop-and-mask mode)
-  - Video (this fodler show some examples of segmented videos, it show the recosntructed video with the bounding box, Ids, and mask (color change on masked region)
-  - attention maps (this folder show some examples on how the model 'sees' in different modes)
-  - Tables (my results of model inference)
+### Dataset & Ground Truth
+  - **SSV2 dataset: ** zip files for Segmentation
+  - **VideoTest** (the original video of the 100 videos I've segmented, used for Model inference)
+  - **Hand-Crafted Benchmark:** <ins>Ground_truth.json</ins> and <ins>prompt.json files</ins> ontaining ... QA pairs specifically designed to test temporal sequencing and causal inference.
+  - **Labels:** <ins>labels.json</ins> Synced with SSV2 ground truth for rigorous evaluation.
+
+## Research Outputs
+  - **Segmentation Masks:**.npy files used for the "Crop-and-Mask" inference mode.
+  - **Visualizations:** Reconstructed videos showing bounding boxes, IDs, and attention maps.
+  - **Attention Maps:** Heatmaps revealing the model's visual focus across different inference modes.
+  - **Results:** Comprehensive CSV tables (Description_table, Summary_table) with metrics:..
 
 Codes:
   - ManualSegmentation code
