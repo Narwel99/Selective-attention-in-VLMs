@@ -3,7 +3,7 @@
 
 This repository contains the framework and experimental pipeline developed for my Master's Thesis: **"Analysis of temporal and causal understanding in VLMs in comparison with the biological brain."**
 
-##Researche Objective
+## Researche Objective
 Does simulating biological behavioral selective attention enhance the performance of Vision-Language Models (VLMs) in understanding Temporality and Object-Action Causality?
 By filtering out background context to focus on relevant objects, this project evaluates whether current architectures can achieve better cognitive alignment with human-like reasoning.
 
