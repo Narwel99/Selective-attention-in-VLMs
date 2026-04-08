@@ -5,129 +5,72 @@ This repository contains the framework and experimental pipeline developed for m
 
 ## Researche Objective
 Does simulating biological behavioral selective attention enhance the performance of Vision-Language Models (VLMs) in understanding Temporality and Object-Action Causality?
-By filtering out background context to focus on relevant objects, this project evaluates whether current architectures can achieve better cognitive alignment with human-like reasoning.
 
-## Project content
-### Dataset & Ground Truth
-  - **SSV2 dataset:** zip files for Segmentation
-  - **VideoTest** (the original video of the 100 videos I've segmented, used for Model inference)
-  - **Hand-Crafted Benchmark:** <ins>Ground_truth.json</ins> and <ins>prompt.json files</ins> ontaining ... QA pairs specifically designed to test temporal sequencing and causal inference.
-  - **Labels:** <ins>labels.json</ins> Synced with SSV2 ground truth for rigorous evaluation.
+By filtering out background noise to focus strictly on relevant objects (simulating the "What" and "Where" pathways), this project evaluates whether current architectures like LLaVA-NeXT-Video, mPLUG-Owl3, and Video-LLaMA2 can achieve better cognitive alignment with human-like reasoning
 
-## Research Outputs
-  - **Segmentation Masks:**.npy files used for the "Crop-and-Mask" inference mode.
-  - **Visualizations:** Reconstructed videos showing bounding boxes, IDs, and attention maps.
-  - **Attention Maps:** Heatmaps revealing the model's visual focus across different inference modes.
-  - **Results:** Comprehensive CSV tables (Description_table, Summary_table) with metrics:..
-
-Codes:
-  - ManualSegmentation code
-  - Model_2modes
-  - Requirement.txt for each code
-  - ReadME.
+## Repository Structure
+├── datasets/VideoTest/       # 100 selected .webm videos from SSV2 dataset
+├── outputs/
+│   ├── SegmentedVideos/      # Visual proof of object tracking (Boxes, IDs, Overlays)
+│   ├── attention_maps/       # Input visuals: Original vs. Crop-and-Mask (Foveal Focus)
+│   ├── Masks.zip/            # Pre-generated .npy masks for immediate inference
+│   ├── detailed_evaluation/  # Full results (Excel: QA pairs with metrics)
+│   └── summary_tables/       # Aggregate performance metrics
+├── Manual.ipynb              # GUI-based Segmentation & Mask Generation (SAM)
+├── Model_LLaVA.ipynb         # Inference & Evaluation for LLaVA-NeXT
+├── Model_mPLUG.ipynb         # Inference & Evaluation for mPLUG-Owl3
+├── Model_VideoLLaMA.ipynb    # Inference & Evaluation for Video-LLaMA2
+├── requirementsS.txt         # Dependencies for Segmentation (SAM)
+└── requirementsM.txt         # Dependencies for VLM Inference
 
 This project has two step.  
 First : Segmentation process  
-Second : Models inference
+Second : Models inference and Evaluation
 
-## INSTALLATION AND RUNNING INSTRUCTIONS:
-  ### Segmentation process
-- Download the Project files
-- create new environment with specific python version for Segmentation codes (makes sure you have conda installed)
+## INSTALLATION & RUNNING :
+  ### Segmentation Pipeline (Segment_anything_model, SAM)
   ```
   conda create -n Segm python=3.11.12
+  conda actiavate Segm
+  pip install -r requirementsS.txt
   ```
-  activate environment
-   ```
-  conda activate Segm 
-  ```
-  - Download all necessary libraries, you can use the requirements.text files  
-  There is two of them, for Segmentation use requirementsS.txt
-   ```
-  pip install -r /path/to/requirementsS.txt
-  ```
-  - open ManualSegmentation notebook
-  - Select Appropriate Kernel (here Segm)
-  - run the cells
+ Run Manual.ipynb. Ensure you select the Segm kernel.
 
-  ### Model inference
-  - create another environment with specific python version for the Model
+  ### VLM inference
   ```
   conda create -n Model python=3.10.18
+  conda activate Model
+  pip install -r requirementsM.txt
   ```
-  activate environment
-   ```
-  conda activate Model 
-  ```
-  -Download all necessary libraries, you can use the requirements.text files
-  Here us requirementsM.txt
-   ```
-  pip install -r /path/to/requirementsM.txt
-  ```
-  - open Model_2modes notebook
-  - Select Appropriate Kernel (here Model)
-  - run the cells
+ Run the specific Model_xxx.ipynb for the model you wish to test. Ensure you create different environments for each models, avoiding dependencies conflicts.
 
-## CODES EXPLANATION
-### Segmentation process
-This codes allows to visualize videos from the SSV2 dataset.  
-It provide a custom interface te guide the segmentation processus  
-The interface allow the user to:
-- visualize video frames of the current video by skipping each 10th frames or selecting a specific frame.
-- add or remove points in the current frames (points will create a bounding box to the object, that will be display right after the selection)
-- skip the current video or jump to a specific video (by its name)
-- save the current selection, automatically segment the videos and gather results then switch to next video.
-- stop the processus.
-
+## Framework Explanation
+### Phase 1: Biologically-Inspired Preprocessing (Manual.ipynb)
+This notebook provides a custom interface to guide the segmentation process:
+ - **Interactive Selection:** Add/remove points to define objects of interest.(points will create a bounding box to the object, that will be display right after the selection)
+ - **Vizualisation:** travels accross videos frames or differents videos.
+ - **Automated Tracking:** Leverages SAM to track and segment causal agents across all frames.
+ - **Output Generation:** Saves .npy masks, bounding boxes, and IDs for the next phase.
+  
 Everytimes a segmentation is performed the code saves:
 - the frames (for visualization)
 - the frames with the bouding boxes (for visualization)
 - the frames with the masks (for visualization)
 - the segmentation masks (.npy files used for Model inference process)
 - the reconstructed video with the bouding boxes , IDs and masks
-- the reconstructied video with masks only (different colors on objects for visualization)
+- the reconstructied video with overlays on the objects only
 - the tracking results for each objects accross frames
 - the selections made (coordinate points to select an object for segmentation)
 
-In the outputs directory, for a matter of size you can only see a few examples of the reconstructed videos for both cases.  
-And the masks file for the 100 videos I have segmented. (zip file), which is needed to run the next step
+### Phase 2: Dual-Mode Inference (Model_xxx.ipynb)
+The models are evaluated under two conditions:
+1. **Original Mode (Baseline):** The VLM processes the video as-is.
+2. **Crop-and-Mask:** Based on the generated masks, the video is cropped to isolate the objects of interest and zero-out the background, simulating foveal focus and removing environmental bias.
+ 
+**Inference Options:**
+- **Single Video Analysis:** Deep dive into a specific clip with real-time scoring.
+- **Batch Analysis:** Automated run over the entire dataset, generating Description_table.csv and Summary_table.csv.
 
-### Model inference
-This codes runs the model in two modes.  
-The original mode is the LLaVa-Next-Video-b model as is.  
-The crop-and-mask model uses the msegmentation masks and applies it to the frame of the video, crop and mask the frame based on the region given by the mask to create 'a focus' on the frame, zeroing out everything outside the region (the aim is to avoid background bias).  
-
-The custom interface allows to choose two options:  
-option 1 (single video analysis) analyse and provide results for only one video :
-- write the name of the video for analysis
-- write the prompts
-  
-  Results for each modes :
-  - Question category (categorical / open-ended)
-  - Model answers for each questions
-  - Accuracy for each categorical questions
-  - F1 Score for each categorical questions
-  - RougeL score for each open-ended questions
-  - Semantic similarity for each open-ended questions
-  - Total scores of metrics for the mode
-
-option 2 (all videos analysis) analyse and provide results for all the videos  
-This mode look at the prompts.json file and run the two modes for all the videos.  
-If the human notation is enables, during process the code will provides the results of each question as option 1 and ask for the notation of each questions.  
-This is time consuming depending on the amount of video and prompt (here 296 answers) so i disable it.  
-At the end this option return the result in two CSV files.  
-  Description_table : 
-  - Name of the video
-  - Current Mode
-  - Questions
-  - Questions category
-  - Accuracy 
-  - F1 score 
-  - RougeL score
-  - Semantic similarity
-  - Model Answers
-  - Ground truth
-  - Human notation
   
   Summary_table :
   For each mode the total score (mean of metrics)
