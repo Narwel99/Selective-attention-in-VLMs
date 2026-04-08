@@ -9,19 +9,19 @@ Does simulating biological behavioral selective attention enhance the performanc
 By filtering out background noise to focus strictly on relevant objects (simulating the "What" and "Where" pathways), this project evaluates whether current architectures like LLaVA-NeXT-Video, mPLUG-Owl3, and Video-LLaMA2 can achieve better cognitive alignment with human-like reasoning
 
 ## Repository Structure
-├── datasets/VideoTest/       # 100 selected .webm videos from SSV2 dataset
-├── outputs/
-│   ├── SegmentedVideos/      # Visual proof of object tracking (Boxes, IDs, Overlays)
-│   ├── attention_maps/       # Input visuals: Original vs. Crop-and-Mask (Foveal Focus)
-│   ├── Masks.zip/            # Pre-generated .npy masks for immediate inference
-│   ├── detailed_evaluation/  # Full results (Excel: QA pairs with metrics)
-│   └── summary_tables/       # Aggregate performance metrics
-├── Manual.ipynb              # GUI-based Segmentation & Mask Generation (SAM)
-├── Model_LLaVA.ipynb         # Inference & Evaluation for LLaVA-NeXT
-├── Model_mPLUG.ipynb         # Inference & Evaluation for mPLUG-Owl3
-├── Model_VideoLLaMA.ipynb    # Inference & Evaluation for Video-LLaMA2
-├── requirementsS.txt         # Dependencies for Segmentation (SAM)
-└── requirementsM.txt         # Dependencies for VLM Inference
+├── datasets/VideoTest/       # 100 selected .webm videos from SSV2 dataset  
+├── outputs/  
+│   ├── SegmentedVideos/      # Visual proof of object tracking (Boxes, IDs, Overlays)  
+│   ├── attention_maps/       # Input visuals: Original vs. Crop-and-Mask (Foveal Focus)  
+│   ├── Masks.zip/            # Pre-generated .npy masks for immediate inference  
+│   ├── detailed_evaluation/  # Full results (Excel: QA pairs with metrics)  
+│   └── summary_tables/       # Aggregate performance metrics  
+├── Manual.ipynb              # GUI-based Segmentation & Mask Generation (SAM)  
+├── Model_LLaVA.ipynb         # Inference & Evaluation for LLaVA-NeXT  
+├── Model_mPLUG.ipynb         # Inference & Evaluation for mPLUG-Owl3  
+├── Model_VideoLLaMA.ipynb    # Inference & Evaluation for Video-LLaMA2  
+├── requirementsS.txt         # Dependencies for Segmentation (SAM)  
+└── requirementsM.txt         # Dependencies for VLM Inference  
 
 This project has two step.  
 First : Segmentation process  
@@ -70,10 +70,4 @@ The models are evaluated under two conditions:
 **Inference Options:**
 - **Single Video Analysis:** Deep dive into a specific clip with real-time scoring.
 - **Batch Analysis:** Automated run over the entire dataset, generating Description_table.csv and Summary_table.csv.
-
-  
-  Summary_table :
-  For each mode the total score (mean of metrics)
-
-
 
