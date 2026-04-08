@@ -91,8 +91,8 @@ The success of cognitive-inspired pipelines depends on whether the VLM uses loca
 | **VideoLLaMA2 (7B)** | Hierarchical (S-T) | **Neutral** ➖ | **Stable:** Its robust local-global integration makes it largely insensitive to background filtering. |
 | **mPLUG-Owl3 (7B)** | Scene-Centric (Anchors) | **Negative** ❌ | **Unstable:** Relies on "global anchors." Masking disrupts visual-linguistic fusion, leading to hallucinations. |
 
-* ** LLaVA-NeXT-Video:** Diffuse attention in baseline; exceptionally sharp focus in Crop-and-Mask. Removing irrelevant tokens ensures intermediate actions are properly attended to.
-* ** mPLUG-Owl3):** Optimized for scene-level "visual anchors." Removing the background context breaks its semantic reasoning, forcing the model to rely on linguistic priors (hallucinations).
+* **LLaVA-NeXT-Video:** Diffuse attention in baseline; exceptionally sharp focus in Crop-and-Mask. Removing irrelevant tokens ensures intermediate actions are properly attended to.
+* **mPLUG-Owl3:** Optimized for scene-level "visual anchors." Removing the background context breaks its semantic reasoning, forcing the model to rely on linguistic priors (hallucinations).
 * **VideoLLaMA2:** Stable recognition across temporal spans. Its hierarchical spatial-temporal design provides a "safety net" against background noise.
 
 
