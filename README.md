@@ -54,17 +54,17 @@ Run the specific Model_xxx.ipynb for the model you wish to test. Ensure you crea
 ### Phase 1: Biologically-Inspired Preprocessing (Manual.ipynb)
 This notebook provides a custom interface to guide the segmentation process:
  - **Interactive Selection:** Add/remove points to define objects of interest.(points will create a bounding box to the object, that will be display right after the selection)
- - **Visualization:** travels accross videos frames or differents videos.
+ - **Visualization:** Navigates across video frames or different clips.
  - **Automated Tracking:** Leverages SAM to track and segment causal agents across all frames.
  - **Output Generation:** Saves .npy masks, bounding boxes, and IDs for the next phase.
   
-Everytimes a segmentation is performed the code saves:
+Every time a segmentation is performed the code saves:
 - the frames (for visualization)
 - the frames with the bouding boxes (for visualization)
 - the frames with the masks (for visualization)
 - the segmentation masks (.npy files used for Model inference process)
-- the reconstructed video with the bouding boxes , IDs and masks
-- the reconstructied video with overlays on the objects only
+- the reconstructed video with the bounding boxes , IDs and masks
+- the reconstructed video" with overlays on the objects only
 - the tracking results for each objects accross frames
 - the selections made (coordinate points to select an object for segmentation)
 
