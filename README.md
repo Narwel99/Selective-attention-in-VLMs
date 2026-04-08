@@ -1,4 +1,5 @@
 # Selective-attention-in-VLMs
+_Bridging Biological Cognition and Multimodal AI
 Analysis of behavioral selective attention in LLAVA-NEXT-VIDEO-8b.  
 Does filtering out bakcground noise to focus on relevant object in a scene enhance VLMs performance in understanding Temporality and objects-actions causality?
 
