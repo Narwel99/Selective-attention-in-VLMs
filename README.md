@@ -45,7 +45,10 @@ Second : Models inference and Evaluation
   conda activate Model
   pip install -r requirementsM.txt
   ```
- Run the specific Model_xxx.ipynb for the model you wish to test. Ensure you create different environments for each models, avoiding dependencies conflicts.
+Each model (LLaVA, mPLUG, Video-LLaMA2) requires specific library versions to handle their respective attention mechanisms and vision towers.
+Standard Base: Use the provided requirements.txt.
+Model-Specific: The Section 1 of each Notebook contains the exact import needed, follow the instruction and download them to ensure all dependencies (Liger kernels, ModelScope, etc.) are correctly aligned with the architecture.
+Run the specific Model_xxx.ipynb for the model you wish to test. Ensure you create different environments for each models, avoiding dependencies conflicts.
 
 ## Framework Explanation
 ### Phase 1: Biologically-Inspired Preprocessing (Manual.ipynb)
