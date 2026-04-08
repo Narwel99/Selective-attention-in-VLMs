@@ -9,6 +9,7 @@ Does simulating biological behavioral selective attention enhance the performanc
 By filtering out background noise to focus strictly on relevant objects (simulating the "What" and "Where" pathways), this project evaluates whether current architectures like LLaVA-NeXT-Video, mPLUG-Owl3, and Video-LLaMA2 can achieve better cognitive alignment with human-like reasoning
 
 ## Repository Structure
+```text
 .
 ├── datasets/
 │   └── VideoTest/             # 100 selected .webm clips from SSV2 dataset
