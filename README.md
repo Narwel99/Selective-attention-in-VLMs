@@ -9,19 +9,21 @@ Does simulating biological behavioral selective attention enhance the performanc
 By filtering out background noise to focus strictly on relevant objects (simulating the "What" and "Where" pathways), this project evaluates whether current architectures like LLaVA-NeXT-Video, mPLUG-Owl3, and Video-LLaMA2 can achieve better cognitive alignment with human-like reasoning
 
 ## Repository Structure
-├── datasets/VideoTest/       # 100 selected .webm videos from SSV2 dataset  
-├── outputs/  
-│   ├── SegmentedVideos/      # Visual proof of object tracking (Boxes, IDs, Overlays)  
-│   ├── attention_maps/       # Input visuals: Original vs. Crop-and-Mask (Foveal Focus)  
-│   ├── Masks.zip/            # Pre-generated .npy masks for immediate inference  
-│   ├── detailed_evaluation/  # Full results (Excel: QA pairs with metrics)  
-│   └── summary_tables/       # Aggregate performance metrics  
-├── Manual.ipynb              # GUI-based Segmentation & Mask Generation (SAM)  
-├── Model_LLaVA.ipynb         # Inference & Evaluation for LLaVA-NeXT  
-├── Model_mPLUG.ipynb         # Inference & Evaluation for mPLUG-Owl3  
-├── Model_VideoLLaMA.ipynb    # Inference & Evaluation for Video-LLaMA2  
-├── requirementsS.txt         # Dependencies for Segmentation (SAM)  
-└── requirementsM.txt         # Dependencies for VLM Inference  
+.
+├── datasets/
+│   └── VideoTest/             # 100 selected .webm clips from SSV2 dataset
+├── outputs/
+│   ├── SegmentedVideos/       # Visual proof: Videos with Boxes, IDs, and Mask Overlays
+│   ├── attention_maps/        # Comparative visuals: Original vs. Crop-and-Mask (Foveal Focus)
+│   ├── Masks.zip/             # Pre-generated .npy masks for rapid inference replication
+│   ├── detailed_evaluation/   # Full results (Excel: 296 QA pairs with ROUGE-L, Sim, etc.)
+│   └── summary_tables/        # Aggregate performance & Mean Accuracy tables
+├── Manual.ipynb               # Custom GUI for SAM-based Segmentation & Tracking
+├── Model_LLaVA.ipynb          # Inference & Evaluation pipeline for LLaVA-NeXT-Video
+├── Model_mPLUG.ipynb          # Inference & Evaluation pipeline for mPLUG-Owl3
+├── Model_VideoLLaMA.ipynb     # Inference & Evaluation pipeline for Video-LLaMA2
+├── requirementsS.txt          # Dependencies for Phase 1 (Segmentation/SAM)
+└── requirementsM.txt          # Dependencies for Phase 2 (VLM Inference)
 
 This project has two step.  
 First : Segmentation process  
