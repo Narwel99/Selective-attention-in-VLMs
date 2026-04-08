@@ -3,7 +3,7 @@
 
 This repository contains the framework and experimental pipeline developed for my Master's Thesis: **"Analysis of temporal and causal understanding in VLMs in comparison with the biological brain."**
 
-## Researche Objective
+## Research Objective
 Does simulating biological behavioral selective attention enhance the performance of Vision-Language Models (VLMs) in understanding Temporality and Object-Action Causality?
 
 By filtering out background noise to focus strictly on relevant objects (simulating the "What" and "Where" pathways), this project evaluates whether current architectures like LLaVA-NeXT-Video, mPLUG-Owl3, and Video-LLaMA2 can achieve better cognitive alignment with human-like reasoning
@@ -30,11 +30,11 @@ This project has two step.
 First : Segmentation process  
 Second : Models inference and Evaluation
 
-## INSTALLATION & RUNNING :
+## Installation & Running :
   ### Segmentation Pipeline (Segment_anything_model, SAM)
   ```
   conda create -n Segm python=3.11.12
-  conda actiavate Segm
+  conda activate Segm
   pip install -r requirementsS.txt
   ```
  Run Manual.ipynb. Ensure you select the Segm kernel.
@@ -51,7 +51,7 @@ Second : Models inference and Evaluation
 ### Phase 1: Biologically-Inspired Preprocessing (Manual.ipynb)
 This notebook provides a custom interface to guide the segmentation process:
  - **Interactive Selection:** Add/remove points to define objects of interest.(points will create a bounding box to the object, that will be display right after the selection)
- - **Vizualisation:** travels accross videos frames or differents videos.
+ - **Visualization:** travels accross videos frames or differents videos.
  - **Automated Tracking:** Leverages SAM to track and segment causal agents across all frames.
  - **Output Generation:** Saves .npy masks, bounding boxes, and IDs for the next phase.
   
