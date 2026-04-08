@@ -25,7 +25,7 @@ By filtering out background noise to focus strictly on relevant objects (simulat
 ├── Model_VideoLLaMA.ipynb     # Inference & Evaluation pipeline for Video-LLaMA2
 ├── requirementsS.txt          # Dependencies for Phase 1 (Segmentation/SAM)
 └── requirementsM.txt          # Dependencies for Phase 2 (VLM Inference)
-
+```
 This project has two step.  
 First : Segmentation process  
 Second : Models inference and Evaluation
